@@ -20,6 +20,8 @@ I first did it in Java then converted to Python, as Java is my strong suit as
 of now due to constant practice. I simply searched up the syntaxes for python and
 manually made the switch.
 
+
+
 # CS146 HW 1
 
 I overcomplicated things on the Java. I did not know that methods of editing and 
@@ -37,3 +39,19 @@ or null elements within the lists that messed up the string comprison. I fixed t
 the lower case lists, then taking out the spaces while creating the string. This made sure that 
 even if there were multiple spaces, it wouldn't mess the order of the elements up. When I finished
 the Java version, I translated my work to Python.
+
+
+# CS146 Lab 2
+
+I found the logic of this lab somewhat similar to HW1. For both Java and Python I made a for loop.
+It was for every character, add to hashmap/dictionary. If character already exsists in hashmap/dictionary,
+increment. Then I compared both haspmaps/dictionaries and added the necessary if/else and print statements
+
+
+# CS146 HW 2
+
+For this homework, I noticed that I needed a search algorithm. I simply implemented binary search but instead
+of searching if the number was greater than or less than middle, I was searching to see if middle was a bad
+version. If middle wasn't bad, that meant that the versions after it were bad. If it was bad, that meant that 
+there was a bad version before it, or that it was the bad version. Either way, I would half the list everytime
+the loop iterated, making less searches to the API than if I were to brute force it
