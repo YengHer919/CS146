@@ -20,8 +20,9 @@ This is an insertion sort code from GeeksForGeeks.com
     }
 
 Insertion sort has a while loop nested within a for loop which iterates over the entire list
-Best case, insertion sort has O(N) runtime, however, the while loop usually runs at least
-N times, if not more. Being nested within a loop on N times makes the while loop and the 
-overall algorithm O(N^2)
+Best case (the list is already sorted), insertion sort has O(N) runtime, however, in every other
+case, the while loop will run as many times as needed until the element is sorted. The while loop
+runs at an average of N time. Being nested within a loop on N times makes the while loop and the 
+overall algorithm O(N^2).
 
 
