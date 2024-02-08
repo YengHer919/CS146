@@ -23,7 +23,6 @@ manually made the switch.
 
 
 # CS146 HW 1
-
 I overcomplicated things on the Java. I did not know that methods of editing and 
 replacing characters within strings was an option. I only found this out after completing
 the python that these methods exsisted for Java. I did Java first, as I am more profficeint
@@ -42,16 +41,29 @@ the Java version, I translated my work to Python.
 
 
 # CS146 Lab 2
-
 I found the logic of this lab somewhat similar to HW1. For both Java and Python I made a for loop.
 It was for every character, add to hashmap/dictionary. If character already exsists in hashmap/dictionary,
 increment. Then I compared both haspmaps/dictionaries and added the necessary if/else and print statements
 
 
 # CS146 HW 2
-
 For this homework, I noticed that I needed a search algorithm. I simply implemented binary search but instead
 of searching if the number was greater than or less than middle, I was searching to see if middle was a bad
 version. If middle wasn't bad, that meant that the versions after it were bad. If it was bad, that meant that 
 there was a bad version before it, or that it was the bad version. Either way, I would half the list everytime
 the loop iterated, making less searches to the API than if I were to brute force it
+
+
+#CS
+I first had to rememeber how the fibannacci seqeunce worked. After remembering the sequence
+and basic behavior, I started with four variables. All but one initialized with zeros, the
+outlier was an arbitrary number. I then tried some algebra with a for loop and some if 
+statements, but I could only ever get the 0 1 1 part correct. After some tweaking I only
+got 0 1 2 3 5... onwards. I accomplished this by storing two zeros and a one within the variables
+I then added two variables and stored them within the outlier. I then swapped the values of the
+variables with each other. The one that stored the sum stayed the same, the one that was 
+less than got updated to the previous greater than number, and the greater than variable
+was updated with the sum. If the program ended, the greater variable would be printed, if not
+then it would be used to increment the next sum variable. After a couple attempts of getting 
+the beginning 0 1 1, I quit and searched it up. With a simple if statement in the beginning I
+got everything to turn out good.
