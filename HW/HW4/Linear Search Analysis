@@ -1,1 +1,32 @@
+This is an insertion sort code from GeeksForGeeks.com
+
+ /*Function to sort array using insertion sort*/
+    void sort(int arr[])
+    {
+        int n = arr.length;
+        for (int i = 1; i < n; ++i) {
+            int key = arr[i];
+            int j = i - 1;
+ 
+            /* Move elements of arr[0..i-1], that are
+               greater than key, to one position ahead
+               of their current position */
+            while (j >= 0 && arr[j] > key) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = key;
+        }
+    }
+
+Insertion sort has a while loop nested within a for loop which iterates over the entire list
+Best case (the list is already sorted), insertion sort has O(N) runtime, however, in every other
+case, the while loop will run as many times as needed until the element is sorted. The while loop
+runs at an average of N time. Being nested within a loop on N times makes the while loop and the 
+overall algorithm O(N^2).
+
+The Big O would be O(N^2), The Big Ω would be (N), and we can't really define Θ because the values for Big O and Big Ω are different
+We know that the Big O is N^2 because the worst case that linear search can do is N^2, and its best case being N
+
+
 
