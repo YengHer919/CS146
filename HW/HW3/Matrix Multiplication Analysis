@@ -14,10 +14,10 @@ MATRIX_MULTIPLY(A, B):
       sum ← sum + A[i][k] * B[k][j] 
     result[i][j] ← sum return result
 
-This pseudocode would run at O(i*j*k) where i is the 
+This pseudocode would run at i*j*k where i is the 
 number of rows for A, j is the number of collums in B, 
 and k is the number of collums for A. We need to have
 seperate variables (instead of N) because the loops each have 
 a different parameter for how many times the lines within
 are run. The loops for i and j would make at minimal
-O(i*j) time. But the inner k loop would make this O(i*j*k). 
+i*j time. But the inner k loop would make this i*j*k. 
