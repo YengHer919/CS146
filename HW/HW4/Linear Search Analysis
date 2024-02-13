@@ -1,4 +1,4 @@
-This is an insertion sort code from GeeksForGeeks.com
+ This is an insertion sort code from GeeksForGeeks.com
 
  /*Function to sort array using insertion sort*/
     void sort(int arr[])
@@ -25,7 +25,7 @@ case, the while loop will run as many times as needed until the element is sorte
 runs at an average of N time. Being nested within a loop on N times makes the while loop and the 
 overall algorithm O(N^2).
 
-The Big O would be O(N^2), The Big Ω would be (N), and we can't really define Θ because the values for Big O and Big Ω are different
+The Big O would be O(N^2), The Big Ω would be (N), and we can Θ as N^2 because the average case for lineart sort usually grows within N^2 time
 We know that the Big O is N^2 because the worst case that linear search can do is N^2, and its best case being N
 
 
