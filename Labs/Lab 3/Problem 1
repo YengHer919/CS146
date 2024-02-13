@@ -1,0 +1,16 @@
+1. 10000000000n^2 vs. n^3
+  n3 would be greater asymptotically, if the n is greater than 10000000000, n3 will grow faster. Note that the bigger exponent will always outgrow the smaller one
+
+
+2. n^2log(n) vs. n(log(n))10
+  n^2log(n) would be greater asymptotically. When the log rules are applied, n(log(n))10 would become 10n(log(n). The 10 from the outside goes to the front when 
+  applying log properties. After analyzing both, the first one is bigger because the n is being squared while the second is just n
+
+
+3. nlogn vs. 2^√n
+  2^√n would be greater asymptotically because it is an exponent that is ever growing
+  nlogn = logn(logn) = log((logn)2) = 2(log(logn)) is generally slower than an exponent
+  
+
+4. 2n vs. 2^2n
+  2^2n would be greater asymptotically because 2 is greater than 2n
