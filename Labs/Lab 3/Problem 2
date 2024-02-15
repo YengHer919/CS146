@@ -1,0 +1,19 @@
+isPrime(n): 
+  for(i = 2, i*i <= n; i++) {
+    if(n % i == 0) {
+      return false
+    }
+  return true
+
+
+We get 
+let i*i = n
+then, i*i = k^2
+You get k^2 >= n
+The isolate k = sqrt(n)
+c1 + sqrt(N) + 1(c3) + N(sqrt(c4)) + c5
+
+
+The Best case we can have is O(1)
+We get an average time of O(sqrt(n))
+Worst case, we get O(lg(n)) 
