@@ -1,0 +1,15 @@
+yetAnotherFunc(n):               T(N)
+  if n > 1:                      1
+    for(i=0;i<10n;i++)           10N+1
+      doSomething;               10N
+    yetAnotherFunc(n/2);         T(N/2)
+    yetAnotherFunc(n/2);         T(N/2)
+
+2T(N/2)+20N+2 = 2T(N/2) + N
+This is our recurrence relation. If we apply master's theorem, we get:
+a = 2, b =2
+p = 1
+lgb(a) = 1
+
+Our case when using master's theorem gives us this formula: Θ(n^(logb(a))
+If we plug in our variables, we get Θ(n)
