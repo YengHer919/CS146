@@ -54,7 +54,7 @@ there was a bad version before it, or that it was the bad version. Either way, I
 the loop iterated, making less searches to the API than if I were to brute force it
 
 
-#CS
+# CS146 Extra Credit
 I first had to rememeber how the fibannacci seqeunce worked. After remembering the sequence
 and basic behavior, I started with four variables. All but one initialized with zeros, the
 outlier was an arbitrary number. I then tried some algebra with a for loop and some if 
@@ -67,3 +67,17 @@ was updated with the sum. If the program ended, the greater variable would be pr
 then it would be used to increment the next sum variable. After a couple attempts of getting 
 the beginning 0 1 1, I quit and searched it up. With a simple if statement in the beginning I
 got everything to turn out good.
+
+
+# CS146 HW 5
+For this homework I compared the elements of the runtimes to the masters theorem and 
+replaced the vairbales within the formula to produce my answers. For part 2, I went 
+line by line and analyzed how many times each line would be run, then I made it a 
+reccurrence relation and found its upper, middle, and lower bounds.
+
+
+# CS146 HW 5
+We did this lab in class, by applying log principles to the problems, we can break
+them down and make them easier to comapre. For some, it was just intuition. (ex: 2^2n vs 2^n). 
+For part 2, I went line by line and analyzed how many times each line would be run,
+then I made it a reccurrence relation and found its upper, middle, and lower bounds.
