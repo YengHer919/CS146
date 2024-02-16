@@ -13,7 +13,8 @@ You get k^2 >= n
 The isolate k = sqrt(n)
 c1 + sqrt(N) + 1(c3) + N(sqrt(c4)) + c5
 
+We can simplify the time to sqrt(N).
 
-The Best case we can have is O(1)
-We get an average time of O(sqrt(n))
-Worst case, we get O(lg(n)) 
+The Best case we can have is Ω(1)
+We get an average time of Θ(lg(n)) 
+Worst case, we get O(sqrt(n))
