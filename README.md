@@ -76,8 +76,17 @@ line by line and analyzed how many times each line would be run, then I made it 
 reccurrence relation and found its upper, middle, and lower bounds.
 
 
-# CS146 HW 5
+# CS146 Lab 3
 We did this lab in class, by applying log principles to the problems, we can break
 them down and make them easier to comapre. For some, it was just intuition. (ex: 2^2n vs 2^n). 
 For part 2, I went line by line and analyzed how many times each line would be run,
 then I made it a reccurrence relation and found its upper, middle, and lower bounds.
+
+
+# CS146 HW 6
+For this problem, I applied a similar method to the two sum problem. It now runs in n^2.
+The premise is that it goes through the list element at a time. For each element it 
+finds the complement needed for that one element. From there, it is a nested loop of
+hash map two sum. Extra flavor was needed. I had to make a seperate lsit to contain the
+repeat lists and I had to code extra if statements to make sure there were no repeat 
+numbers. I did all of this first in python, then translated into java.
