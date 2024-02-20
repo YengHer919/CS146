@@ -1,3 +1,4 @@
+1)
 T(N) = 2T(N-1) + 1
 a > 1:
 O(1*2^(n/1)) = O(2^n)
@@ -7,7 +8,7 @@ Assume N = k
 2^nT(N-N) + 1 = 2^nT(0) + 1 = O(2^n)
 
 
-
+2)
 T(N) = 3T(N-1) + n
 a > 1:
 O(n*3^(n/1)) = O(3^(n+1)) = O(3^n)
@@ -17,36 +18,54 @@ Assume N = k
 3^nT(N-N) + 3^(n-1)(N-(n-1))  = 3^nT(0) = 3^nT(1) = 3^n
 
 
+3)
 T(N) = 9T(N/2) + n^2
 log2(9) = 3.17 
 p = 2
 3.17 > 2
-f(n) = O(n^(log2(9))) = O(n^(3.17))
+f(n) = Θ(n^(log2(9))) = Θ(n^(3.17))
 
+Recursively, we get 9 children which have a size of N/2
+each node contributes n^2
+Using this we can approximate T=n^2* (4/9)^(logN) (this is the geometeric series)
+Using property of logarithms, (9/4)^lgn = N^(lg9-lg4) = N^(lg9-2)
+lg2(9) = 3.17, we can simplify N^(lg9-2) to Θ(n^(3.17))
 
-
-
-T(N) = 100T(N/2) + nlog2cn + 1  (c is a constant)
+4)
+T(N) = 100T(N/2) + n^(log2cn + 1)  (c is a constant)
 log2(100) = 6.64
 6.64 > log2cn + 1
-f(n) = O(n^(6.64))  
+f(n) = Θ(n^(6.64)) 
 
+Recursively, we get 100 children which have a size of N/2
+each node contributes n^(log2cn + 1)
+Using this we can approximate T=n^(log2cn + 1)* (4/100)^(logN)(this is the geometeric series)
+Using property of logarithms, (100/4)^lgn = N^(lg100-lg4) = N^(lg100-2)
+lg2(100) = 6.64, we can simplify N^(lg100-2) to Θ(n^(6.64))
 
-
-
+5)
 T(N) = 4T(N/2) + n2logn
 log2(4) = 2
 p = 2
 2 = 2
-f(n) = O(n^(2)log^(6)n)
+f(n) = Θ(n^(2)lgn)
 
+If we assume n^(2)lgn and use substitution,
+We can 4c(n/2)^2 lg^2 (N/2) + N^2 lg N
+cN^2 lg^2 (N/2) + N^2 lg N
+cN^2 lg^2 N − 2cN^2 logN + cN^2 +N^2 logN
+cN^2 lg^2 N - (2c−1)N^2 logN + cN^2
+(2c−1)N^2 logN + cN^2 <= 0
 
+Therefore, Θ(n^(2)lgn)
 
-
+6)
 T(N) = 5T(N/2) + n2/logn
 log2(5) = 2.32
 p = 2
 d = -1
 2.32 > 2
 f(n) = O(n^(2)lglgn)  
+
+
 
