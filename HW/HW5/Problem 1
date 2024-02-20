@@ -68,4 +68,7 @@ d = -1
 f(n) = O(n^(2)lglgn)  
 
 
-
+Recursively, we get 5 children which have a size of N^2/lgn
+each node contributes n^(n2/lgn)
+Using this we can approximate T=n^(n2/lgn)* (lg)^(logN)(this is the geometeric series)
+Using property of logarithms, (lg)^lgn = N^(2) lglgn
