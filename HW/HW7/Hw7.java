@@ -1,3 +1,7 @@
+//Yeng Her
+//2.21.2024
+//Minimum servers
+
 import java.util.*;
 
 class Hw7 {
