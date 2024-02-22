@@ -90,3 +90,26 @@ finds the complement needed for that one element. From there, it is a nested loo
 hash map two sum. Extra flavor was needed. I had to make a seperate lsit to contain the
 repeat lists and I had to code extra if statements to make sure there were no repeat 
 numbers. I did all of this first in python, then translated into java.
+
+I first typed out the hash map code that I used for the two sum code, then I made it loop
+through the entire list. Looping through once helped me find 2 numbers needed to equal
+0 (if any). Looping through the second time ensured I found a third. THere was a lot of 
+repeats, hoever, and as previously mentioned, I added a lot of if statements to ensure
+that there were no repeat integers or combinations.
+
+# CS146 HW 7
+For this problem, I knew that we needed to schedule. I used a min heap, knowing that the 
+first element in this heap would always contain the smallest integer. Then, I would add
+the first element to the heap. I would only ever keep track of the end times since storing
+the start times don't matter in regaurds to compairson. I would use the start time of the
+next element and compare to the top of the min heap. If it was larger, I would delete the
+top element and replace it with the value of the end time of the newest element. If it was
+smaller, that meant that there needed to be another server so I would increment the count.
+
+At first, I got confused. I implemented the priority queue without a lot of issues but it
+was not returning the correct values. I realized that I could initialize count with 1 because
+almost any sized list would need at least 1 server. If the list had 0 servers, I would just return
+0. Then I had to add count inside the while loop of the heap so that it would count only when new
+servers were needed, not when the loop finished.
+
+I did this in python and translated to java.
