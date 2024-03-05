@@ -113,3 +113,20 @@ almost any sized list would need at least 1 server. If the list had 0 servers, I
 servers were needed, not when the loop finished.
 
 I did this in python and translated to java.
+
+
+# CS146 HW 8
+
+To solve this problem, I implemented a counting sort-like algorithm to count the number 
+of times each character appeared in a string. I used a hashmap to store and index everything.
+I then counted out the biggest odd number of characters (there can only be one in the 
+palindrome). Then I returned the sum of the biggest odd number of characters and all of the
+even numbers for both python and java.
+
+# CS146 HW 9
+
+I first analyzed the given functions and definitions. Then I checked for empty root or
+if the root was equal to p or q. This is because if the root was empty, the recursive path
+was 'over' and if it was equal to p or q, then it was the common ancestor. Then I checked down
+the left and right paths of the tree and if both returned some node, then that node was the
+LCA. I finished by building trees and testing my function
