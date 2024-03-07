@@ -131,6 +131,10 @@ was 'over' and if it was equal to p or q, then it was the common ancestor. Then 
 the left and right paths of the tree and if both returned some node, then that node was the
 LCA. I finished by building trees and testing my function
 
+Quick note: for the following java assingments, the TreeNode class will not be defined
+because I am creating all of these assingments as different classes on one project to 
+better organize my IDE
+
 # Lab 4
 
 I recursively checked if the current and children nodes were null. Then, I switched the
@@ -144,4 +148,10 @@ and the right was greater than the current node. However, this would not satisfy
 definition of a binary search tree. I learned in class that we needed to implement an
 upper and lower bounds for each node within the binary search tree. So I implemented a
 function to do so within each recursive call. I coded it in java, then translated
-to python
+to python. 
+
+I learned how to set the default upper and lower bounds by searching it up and including
+it into my code. My comparison was achieved by I compareing the children to the upper 
+and lower bounds, and to their parent's (current) value, ensuring that they didn't go
+too far (past the bounds), but also met the expectation of being less/greater than
+their parent.
