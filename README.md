@@ -135,7 +135,7 @@ LCA. I finished by building trees and testing my function
 
 I recursively checked if the current and children nodes were null. Then, I switched the
 children and called the function with the left and right children. I first did this in
-python, then, translated into Java. I verified my results by checking each node of the tree
+java, then, translated into python. I verified my results by checking each node of the tree
 
 # Lab 5
 
@@ -143,5 +143,5 @@ Similar to lab 4, I recursively checked if each left node was less than the curr
 and the right was greater than the current node. However, this would not satisfy the 
 definition of a binary search tree. I learned in class that we needed to implement an
 upper and lower bounds for each node within the binary search tree. So I implemented a
-function to do so within each recursive call. I coded it in python, then translated
-to java
+function to do so within each recursive call. I coded it in java, then translated
+to python
