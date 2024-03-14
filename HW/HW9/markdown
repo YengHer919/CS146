@@ -5,3 +5,7 @@ if the root was equal to p or q. This is because if the root was empty, the recu
 was 'over' and if it was equal to p or q, then it was the common ancestor. Then I checked down
 the left and right paths of the tree and if both returned some node, then that node was the
 LCA. I finished by building trees and testing my function
+
+Quick note: for the following java assingments, the TreeNode class will not be defined
+because I am creating all of these assingments as different classes on one project to 
+better organize my IDE
