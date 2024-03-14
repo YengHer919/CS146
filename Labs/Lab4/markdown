@@ -1,0 +1,5 @@
+# Lab 4
+
+I recursively checked if the current and children nodes were null. Then, I switched the
+children and called the function with the left and right children. I first did this in
+java, then, translated into python. I verified my results by checking each node of the tree
