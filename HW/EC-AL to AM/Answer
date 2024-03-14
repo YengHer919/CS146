@@ -1,1 +1,17 @@
+# Given an adjacency list, how can you convert it to an adjacency matrix?
+First, you would find the amount of verticies inside the adjacnecy list so 
+that you have a number to create an nxn matrix, then you would go through the 
+adjacency list, the current vertex, or your key would be i and the vertex 
+being traveled to or the value, would be j. Using these, you would iterate 
+through the list and fill the matrix with [i][j]. You can fill the matrix at 
+[i][j] with 1 for unweighted and the weight for weighted graphs, make sure to
+fill in matrix[j][i] in the case of undirected graphs.
 
+
+
+# Given an adjacency matrix, how can you convert it to an adjacency list? 
+
+
+
+
+# Given a directed graph, how can you reverse the direction of each edge?
