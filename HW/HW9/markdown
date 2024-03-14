@@ -1,0 +1,7 @@
+# CS146 HW 9
+
+I first analyzed the given functions and definitions. Then I checked for empty root or
+if the root was equal to p or q. This is because if the root was empty, the recursive path
+was 'over' and if it was equal to p or q, then it was the common ancestor. Then I checked down
+the left and right paths of the tree and if both returned some node, then that node was the
+LCA. I finished by building trees and testing my function
