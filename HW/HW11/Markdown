@@ -1,0 +1,9 @@
+# CS 146 HW 11
+
+For this assignment, I first creaated a grid and worked out navigation with the matrix. Then,
+I tried to apply recursion. It failed again and again because it kept returning early. I then 
+seperated the recursive part into a new function so that I could exclude some of the return 
+statements that I wrote. In the recursion, if the current color did not match the new color, 
+it would redo the new 'fill' function that I created but to the top, left, right, and bottom, 
+if they weren't null. I started in Python then translated into Java.
+
