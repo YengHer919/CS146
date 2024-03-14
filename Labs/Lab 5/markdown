@@ -1,0 +1,8 @@
+# Lab 5
+
+Similar to lab 4, I recursively checked if each left node was less than the current node
+and the right was greater than the current node. However, this would not satisfy the 
+definition of a binary search tree. I learned in class that we needed to implement an
+upper and lower bounds for each node within the binary search tree. So I implemented a
+function to do so within each recursive call. I coded it in java, then translated
+to python. 
