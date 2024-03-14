@@ -1,4 +1,5 @@
 # Given an adjacency list, how can you convert it to an adjacency matrix?
+
 First, you would find the amount of verticies inside the adjacnecy list so 
 that you have a number to create an nxn matrix, then you would go through the 
 adjacency list, the current vertex, or your key would be i and the vertex 
@@ -7,6 +8,14 @@ through the list and fill the matrix with [i][j]. You can fill the matrix at
 [i][j] with 1 for unweighted and the weight for weighted graphs, make sure to
 fill in matrix[j][i] in the case of undirected graphs.
 
+Python
+def al_to_am(adj_list):
+    n = len(adj_list)
+    matrix = [[0] * n for k in range(n)]
+    for i, edges in enumerate(adj_list):
+        for j in edges:
+            matrix[i][j] = 1 
+    return matrix
 
 
 # Given an adjacency matrix, how can you convert it to an adjacency list? 
