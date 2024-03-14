@@ -1,0 +1,7 @@
+# CS146 HW 8
+
+To solve this problem, I implemented a counting sort-like algorithm to count the number 
+of times each character appeared in a string. I used a hashmap to store and index everything.
+I then counted out the biggest odd number of characters (there can only be one in the 
+palindrome). Then I returned the sum of the biggest odd number of characters and all of the
+even numbers for both python and java.
