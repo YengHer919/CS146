@@ -35,3 +35,14 @@ def adjacency_matrix_to_list(matrix):
 
 # Given a directed graph, how can you reverse the direction of each edge?
 
+For the adjacency list, you would add the lists key to each of its values, then 
+remove it's previous values and repeat for each item in the list. For a matrix, you 
+simply put all values of [i][j] tp [j][i]
+
+def transpose_matrix(matrix):
+    n = len(matrix)
+    transposed = [[0]*n for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            transposed[j][i] = matrix[i][j]
+    return transposed
