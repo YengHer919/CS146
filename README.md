@@ -155,3 +155,23 @@ it into my code. My comparison was achieved by I compareing the children to the 
 and lower bounds, and to their parent's (current) value, ensuring that they didn't go
 too far (past the bounds), but also met the expectation of being less/greater than
 their parent.
+
+# CS 146 HW 10
+
+For this problem, I started in python. I first tried to navigate the tree and store the
+values into a list. This gave me one list that wasn't ordered as I wanted it. I did some
+experiementing and used the hint inside the assignment and used a queue to store the 
+values, pop them into a single list, and then store that list inside of another list and
+repeat the process. I used the queue to store the values because it was the ideal data
+structure for holding values in a "line" which was what I was looking for. I then 
+formatted and tested my code and transalted into Java
+
+# CS 146 HW 11
+
+For this assignment, I first creaated a grid and worked out navigation with the matrix. Then,
+I tried to apply recursion. It failed again and again because it kept returning early. I then 
+seperated the recursive part into a new function so that I could exclude some of the return 
+statements that I wrote. In the recursion, if the current color did not match the new color, 
+it would redo the new 'fill' function that I created but to the top, left, right, and bottom, 
+if they weren't null. I started in Python then translated into Java.
+
