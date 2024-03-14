@@ -1,0 +1,9 @@
+# CS 146 HW 10
+
+For this problem, I started in python. I first tried to navigate the tree and store the
+values into a list. This gave me one list that wasn't ordered as I wanted it. I did some
+experiementing and used the hint inside the assignment and used a queue to store the 
+values, pop them into a single list, and then store that list inside of another list and
+repeat the process. I used the queue to store the values because it was the ideal data
+structure for holding values in a "line" which was what I was looking for. I then 
+formatted and tested my code and transalted into Java
