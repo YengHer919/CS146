@@ -1,0 +1,9 @@
+To tackle this problem, I identified that I would need to create a graph. I was too lazy 
+to create a node system, so I opted for an adjacncy matrix since I thought that it would be
+simpler. I started by initializing a nxn map, then filling in the values using the pipes. 
+From there I have a while loop that only ends if there are no more unvisited houses. (I 
+kept track of house vistation status with an nxn adjacency matrix of booleans). Inside the
+while loop, I would check if the houses were visited, if they weren't I would go into their
+edges and find their minimum edge, adding it to the cost if there exsisted one. Before 
+finalizing the addtion to the cost, I would check if it was cheaper just to build a well. 
+Then I would total and return the cost
