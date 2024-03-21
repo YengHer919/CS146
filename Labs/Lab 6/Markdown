@@ -1,0 +1,6 @@
+For this problem, I recognized that we needed to check for cycles and that the best way to do that
+was to emulate topological sorting. I tried to implement a part of Kahn's, iterating through the 
+graph starting from one node and keeping track of all the nodes that I had already visted inside of 
+an array. For each node, I would recursively check the entire tree if any path of nodes would lead back
+to a node that had been visted. If the recursive function found a cycle, it would return true, otherwise
+it would return false, inidicating a lack of cycles and the ability to complete all the classes.
