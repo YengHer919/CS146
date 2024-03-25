@@ -1,0 +1,18 @@
+I tried implementing Kahn's algorithm first, but everywhere I looked online didn't give me 
+any substantial differences between Kahn's and BFS or DFS. So, I simply copied and pasted BFS 
+code for Kahn's and everything worked out (I hope).
+
+For BFS, I started by creating a node class, equipped with InDegrees, Val, and two 
+arraylists of prereq and under (classes that current node is a prereq for). Then I initialized 
+the graph with the given list of list of integers for the prereqs. Finally, I made a queue,
+filled it with all the nodes with an indegree of 0, then filled a list to return, then 
+updated all other nodes (from the under list). I had this logic (minus the first step) within
+a for loop which stopped after the queue was empty, signifying that all nodes with 0 in 
+degrees were in the list. To check for cycles, I made sure that the list that I was returning 
+was the size of the number of courses being taken. In the case of a cycle, this would be 
+false as the size of the returned list would be less than that of the number of courses
+due to a cycle causing some courses to have more than 0 in degrees. My approach to this 
+was first creating the node class so that I had everything that I needed stored into
+manageable nodes, then I used a queue to simulate searching the breadth of the graph.
+
+For DFS, I did BFS but replaced the queue with a stack.
