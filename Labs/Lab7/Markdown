@@ -1,1 +1,13 @@
+I realized that for this problem, I needed to find the single-source
+shortest path for every vertex of the graph. Floyd-Warshall was the 
+first thing that came to mind. I first ran Floyd-Warshall, then I 
+scanned through the matrix, incrementing how many paths each vertex
+had that were equal to or less than the distance threshold. I then 
+took the vertex with the least amount of paths and returned it.
 
+A challenge I faced was applying floyd warshal. It was a lot of
+trouble trying to run it in my head and memorize/trace the algorithm. 
+Then, I had to come up with a way to read through the matrix I created
+and understand what was at each index. Lastly, I had to track and 
+assign a value to each vertex so that I could accurately find the 
+vertex with the smallest number of paths under the distance threshold.
